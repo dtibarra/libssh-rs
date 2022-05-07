@@ -5,7 +5,7 @@ fn main() {
         && pkg_config::Config::new()
             // ssh_userauth_publickey_auto_get_current_identity
             // is not yet in a released version of libssh
-            .atleast_version("0.9.7")
+            .atleast_version("0.9.6")
             .probe("libssh")
             .is_ok()
     {
