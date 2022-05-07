@@ -64,6 +64,7 @@ fn main() {
     cfg.define("WITH_ZLIB", Some("1"));
     cfg.define("WITH_GEX", Some("1"));
     cfg.define("WITH_SFTP", Some("1"));
+    cfg.define("WITH_SERVER", Some("1"));
 
     if target.contains("windows") {
         cfg.define("HAVE_IO_H", Some("1"));
